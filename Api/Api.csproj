@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <AssemblyName>ArrayCalculator.Api</AssemblyName>
+    <RootNamespace>ArrayCalculator.Api</RootNamespace>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <IsPackable>true</IsPackable>
+    <Company>CodyBit</Company>
+    <Copyright>Copyright © 2022 Codybit</Copyright>
+    <Description>This project is used for to have an ability to reverse the array and to delete item from it without default functions/features.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CodyBit/ArrayCalculator</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>ArrayCalculator.Api</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\ArrayCalculator.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;CS1591;API1000</NoWarn>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.16" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
+  </ItemGroup>
+
+</Project>
